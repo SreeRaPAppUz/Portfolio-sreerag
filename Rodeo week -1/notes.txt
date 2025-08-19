@@ -1,0 +1,6 @@
+HTML: https://www.w3schools.com/html/html_intro.asp
+	 -HTML is the standard markup language for Web pages.
+	 - With HTML you can create your own Website.
+	 -  html refers to hyperText Markup Language.
+	 - It is the skeleton of any web page.
+	 - It defines the structure and content.

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo"><a href="#home">SRG<span>.</span></a></div>
+  
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h1>Hi, I'm <span>Sreerag</span></h1>
+      <h2>Python Full-Stack Developer</h2>
+    </div>
+    <div class="right-sec">
+      <div class="soc-link">
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container">
+      <!-- Left Side: Image -->
+      <div class="about-img">
+        <img src="img/profile11.png" alt="Sreerag">
+      </div>
+  
+      <!-- Right Side: Text -->
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>
+          Hi, I'm <strong>Sreerag</strong>, a passionate <strong>Python Full-Stack Developer</strong> 
+          with a knowledge in building modern, user-friendly, and scalable web applications.
+          I enjoy turning ideas into reality through clean code and creative design.
+        </p>
+        <p>
+          With a background in <strong>BCA</strong> and hands-on experience in full-stack 
+          development, I love working on projects that combine creativity and technology.
+        </p>
+
+        <!-- Download CV Button -->
+      <a href="cv.pdf" download class="cv-btn">
+        <i class="fas fa-file-download"></i> View CV
+      </a>
+  
+        <!-- Skills Section -->
+        <div class="skills">
+          <h3>Skills</h3>
+          <ul>
+            <li><i class="fab fa-python"></i> Python</li>
+            <li><i class="fas fa-leaf"></i> Django</li>
+            <li><i class="fab fa-react"></i> JavaScript (React)</li>
+            <li><i class="fab fa-html5"></i> HTML</li>
+            <li><i class="fab fa-css3-alt"></i> CSS</li>
+            <li><i class="fab fa-bootstrap"></i> Bootstrap</li>
+            <li><i class="fas fa-database"></i> MySQL, SQLite</li>
+            <li><i class="fab fa-git-alt"></i> Git & GitHub</li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+  
+    <!-- Timeline Section -->
+    <div class="timeline">
+      <h2>My Journey</h2>
+      <div class="timeline-container">
+
+        <div class="timeline-item left">
+          <span class="date">2025</span>
+          <h3>Freelance Some projects</h3>
+          <p>After the course, the knowledge gained from Zoople Technologies freelanced some projects like <strong>Event Management System - EVM</strong> and <strong>E-commerce system - EVM</strong></p>
+        </div>
+    
+        <div class="timeline-item right">
+          <span class="date">2024</span>
+          <h3>Python Django Full-Stack Development Training <strong>[June - Oct]</strong></h3>
+          <p>Completed 4-month Python Django Full-Stack Development course from <strong>Zoople Technologies</strong> in Kochi.</p>
+        </div>
+    
+        <div class="timeline-item left">
+          <span class="date">2024</span>
+          <h3>BCA Graduation</h3>
+          <p>Graduated from <strong>Calicut University</strong>, Kerala with a degree in Computer Applications.</p>
+        </div>
+    
+        <div class="timeline-item right">
+          <span class="date">2024</span>
+          <h3>First Coding Project</h3>
+          <p>Built my first website for degree final year project and discovered my passion for programming.</p>
+        </div>
+    
+      </div>
+    </div>
+    
+  </section>
+
+
+  <!-- Contact Section -->
+<section id="contact" class="contact">
+  <h2>Get in Touch</h2>
+  <p>Feel free to reach out for collaborations or just a friendly hello 👋</p>
+  
+  <div class="contact-container">
+    <!-- Contact Form -->
+    <form class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <!-- Contact Info / Social Links -->
+    <div class="contact-info">
+      <p><i class="fa-solid fa-envelope"></i> sreeragkb7@gmail.com</p>
+      <p><i class="fa-solid fa-phone"></i> +91 8714152524</p>
+      <div class="contact-socials">
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+
+  <!-- Footer / Social Links -->
+  <footer class="footer">
+    <p class="footer-text">© 2025 Sreerag</p>
+  </footer>
+
+</body>
+</html>
