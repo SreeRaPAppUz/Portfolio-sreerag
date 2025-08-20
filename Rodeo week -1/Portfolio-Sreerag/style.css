@@ -36,7 +36,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  padding: 10px 15px;
+  padding: 0px 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -89,8 +89,8 @@ body {
   .hamburger {
     display: flex;
     position: absolute;
-    right: 45px;
-    top: 28px;
+    right: 30px;
+    top: 18;
     z-index: 1001; /* above menu */
   }
 
@@ -203,11 +203,17 @@ body {
 /* Responsive */
 @media (max-width: 768px) {
   .hero {
-    background-size: cover;
+    background-size: contain;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    padding: 100px 20px;
+    padding: 45px 22px;
+  }
+
+  .hero-text{
+    align-items: center;
+    padding-top: 90%;
+    padding-right: 5%;
   }
 
   .hero-text h1 {
@@ -219,7 +225,6 @@ body {
   }
 }
 
-
 .right-sec {
   position: fixed;   
   bottom: 20px;      
@@ -227,18 +232,15 @@ body {
   display: flex;
   flex-direction: column; 
   align-items: center;
-  gap: 15px;        
+  gap: 15px;  
+  z-index: 1000;      
 }
 
 .soc-link {
-  position: sticky;
-  top: 40%; /* adjust where you want it to "stick" */
   display: flex;
   flex-direction: column;
   gap: 15px;
   font-size: 1.5rem;
-  margin-left: 20px;
-  margin-bottom: 50px;
 }
 
 .soc-link a {
@@ -252,25 +254,27 @@ body {
   color: #00ff66;
 }
 
+/* Mobile adjustments */
 @media (max-width: 600px) {
   .right-sec {
-    position: relative;
-    bottom: auto;
-    right: auto;
-    margin-top: 20px;
+    position: fixed;  /* keep it fixed on mobile too */
+    bottom: 20px;
+    right: 10px;      /* adjust a bit if needed */
   }
 
   .soc-link {
-    flex-direction: row;
-    justify-content: center;
-    gap: 20px;
+    display: flex;
+    flex-direction: column;  /* keep vertical layout */
+    gap: 10px;    
+    padding-right: 15px;
+    padding-bottom: 20px;           
   }
 }
 
-
+/* ===== About Section ===== */
 .about {
-  padding: 0rem 0rem;
-  background: #000000;
+  padding: 2rem 1rem;
+  background: #000;
   color: #fff;
 }
 
@@ -308,6 +312,7 @@ body {
   color: #ddd;
 }
 
+/* Skills */
 .skills h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
@@ -349,7 +354,7 @@ body {
   color: #000;
 }
 
-/* Button Style */
+/* Button */
 .cv-btn {
   display: inline-flex;
   align-items: center;
@@ -381,13 +386,12 @@ body {
   color: #000;
 }
 
-/* ===== ABOUT SECTION (Mobile Fix) ===== */
+/* ===== About Section Mobile ===== */
 @media (max-width: 600px) {
   .about .container {
     flex-direction: column;
-    gap: 1.5rem; /* reduce gap */
+    gap: 1.5rem;
     text-align: center;
-    padding: 30px 15px;
   }
 
   .about-img img {
@@ -398,103 +402,6 @@ body {
     max-width: 100%;
   }
 }
-
-/* Timeline Section */
-.timeline {
-  margin-top: 0rem;
-  padding: 2rem;
-}
-
-.timeline h2 {
-  text-align: center;
-  font-size: 2rem;
-  color: #00ff88;
-  margin-bottom: 3rem;
-}
-
-/* Timeline Container */
-.timeline-container {
-  position: relative;
-  margin: 0 auto;
-  max-width: 1000px;
-}
-
-/* Vertical Line */
-.timeline-container::after {
-  content: '';
-  position: absolute;
-  width: 3px;
-  background-color: #00ff88;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -1.5px;
-}
-
-/* Timeline Items */
-.timeline-item {
-  position: relative;
-  width: 45%;
-  padding: 1.5rem;
-  background: #222;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.4);
-  margin: 2rem 0;
-}
-
-/* Date Badge */
-.timeline-item .date {
-  background: #00ff88;
-  color: #111;
-  font-weight: bold;
-  padding: 0.3rem 0.7rem;
-  border-radius: 5px;
-  position: absolute;
-  top: -15px;
-}
-
-/* Left Side Items */
-.timeline-item.left {
-  left: 0;
-}
-
-.timeline-item.left .date {
-  right: -80px;
-}
-
-/* Right Side Items */
-.timeline-item.right {
-  left: 52%;
-}
-
-.timeline-item.right .date {
-  left: -120px;
-}
-
-/* ===== TIMELINE (Mobile Fix) ===== */
-@media (max-width: 600px) {
-  .timeline-container::after {
-    left: 20px; /* keep line at left side */
-  }
-
-  .timeline-item {
-    width: calc(100% - 40px); 
-    margin-left: 40px; /* keeps space for line */
-  }
-
-  .timeline-item.left,
-  .timeline-item.right {
-    left: 0; /* remove desktop left/right offsets */
-  }
-
-  .timeline-item .date {
-    position: relative;
-    left: 0;
-    margin-bottom: 10px;
-  }
-}
-
-
 
 /* Contact Section */
 .contact {
@@ -678,7 +585,7 @@ body {
 
 /* Footer */
 .footer {
-  min-height: 50px;
+  min-height: 35px;
   width: 100%;
   text-align: center;
   padding: 15px 20px;

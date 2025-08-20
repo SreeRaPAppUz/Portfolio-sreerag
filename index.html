@@ -3,13 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>all</title>
+    <title>Portfolio Link</title>
+    <style>
+        /* Reset default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* full screen */
+            background-color: #000; /* dark background */
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Button styles */
+        .btn {
+            border: none;
+            outline: none;
+            cursor: pointer;
+            font-size: 1rem;
+            padding: 14px 30px;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        /* Primary button style */
+        .btn-primary {
+            background-color: #00bcd4;
+            color: #fff;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        }
+
+        /* Hover effect */
+        .btn-primary:hover {
+            background-color: #00ff66;
+            transform: translateY(-2px) scale(1.05);
+            box-shadow: 0 6px 8px rgba(0,0,0,0.3);
+        }
+
+        /* Active/pressed effect */
+        .btn-primary:active {
+            transform: translateY(1px) scale(0.98);
+            box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+        }
+    </style>
 </head>
 <body>
-    <center>
-        <a href="./Rodeo week -1/Portfolio-Sreerag/index.html">
-            <button type="button" class="btn btn-primary">Click here</button>
-        </a>
-    </center>
+    <a href="./Rodeo week -1/Portfolio-Sreerag/index.html" class="btn btn-primary">
+        Click Here
+    </a>
 </body>
 </html>
