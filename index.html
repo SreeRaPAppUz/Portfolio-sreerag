@@ -1,12 +1,279 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=./Rodeo week -1/Portfolio-Sreerag/index.html">
-  <title>Redirecting...</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 </head>
 <body>
-  <p>If you are not redirected, <a href="./Rodeo week -1/Portfolio-Sreerag/index.html">click here</a>.</p>
+
+  <nav class="navbar">
+    <div class="logo"><a href="#home">SRG<span>.</span></a></div>
+    
+    <!-- Hidden checkbox for toggle -->
+    <input type="checkbox" id="menu-toggle" />
+    
+    <!-- Hamburger Icon -->
+    <label for="menu-toggle" class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    
+    <!-- Overlay Menu -->
+    <div class="nav-overlay">
+      <ul class="nav-links overlay-links">
+        <li><a href="#home" onclick="document.getElementById('menu-toggle').checked = false;">Home</a></li>
+        <li><a href="#about" onclick="document.getElementById('menu-toggle').checked = false;">About</a></li>
+        <li><a href="#services" onclick="document.getElementById('menu-toggle').checked = false;">Services</a></li>
+        <li><a href="#projects" onclick="document.getElementById('menu-toggle').checked = false;">Projects</a></li>
+        <li><a href="#contact" onclick="document.getElementById('menu-toggle').checked = false;">Contact</a></li>
+      </ul>
+    </div>
+    
+    <!-- Inline Nav Links for Desktop/Tablet -->
+    <ul class="nav-links inline-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <!-- Hero Section -->
+
+  <section class="hero" id="home"><br><br>
+    <div class="hero-content">
+      <h1>Hi, I'm <span>Sreerag</span></h1>
+      <h2>Python Full-Stack Developer</h2>
+      <p>Crafting modern web applications with clean design and powerful functionality.</p>
+    </div>
+    <div class="right-sec">
+      <div class="soc-link">
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+  </section>
+<!-- ===== ABOUT SECTION ===== -->
+<section class="about" id="about">
+  <div class="container">
+    <!-- Left Side: Image -->
+    <div class="about-img">
+      <img src="assets/img/profile11.png" alt="Profile picture of Sreerag">
+    </div>
+
+    <!-- Right Side: Text -->
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>
+        Hi, I'm <strong>Sreerag</strong>, a passionate <strong>Python Full-Stack Developer</strong> 
+        with experience in building modern, user-friendly, and scalable web applications.
+        I enjoy turning ideas into reality through clean code and creative design.
+      </p>
+      <p>
+        With a background in <strong>BCA</strong> and hands-on experience in full-stack 
+        development, I love working on projects that combine creativity and technology.
+      </p>
+
+      <!-- Download CV Button -->
+      <a href="assets/sample_cv.pdf" download class="cv-btn">
+        <i class="fas fa-file-download"></i> Download CV
+      </a>
+      <a href="assets/sample_cv.pdf" target="_blank" class="cv-btn">
+        <i class="fas fa-file-download"></i> View CV
+      </a>
+
+      <!-- Skills Section -->
+      <div class="skills"><br><br>
+        <h3>Skills</h3>
+        <ul>
+          <li><i class="fab fa-python"></i> Python</li>
+          <li><i class="fas fa-leaf"></i> Django</li>
+          <li><i class="fab fa-react"></i> JavaScript (React)</li>
+          <li><i class="fab fa-html5"></i> HTML</li>
+          <li><i class="fab fa-css3-alt"></i> CSS</li>
+          <li><i class="fab fa-bootstrap"></i> Bootstrap</li>
+          <li><i class="fas fa-database"></i> MySQL, SQLite</li>
+          <li><i class="fab fa-git-alt"></i> Git & GitHub</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== SERVICES SECTION ===== -->
+<section class="services" id="services">
+  <div class="services-wrapper">
+    <h2>My Services</h2>
+    <p class="services-subtitle">Explore the range of solutions I offer to bring your ideas to life.</p>
+
+    <div class="services-container">
+      <!-- Service 1 -->
+      <div class="service-card">
+        <i class="fas fa-code"></i>
+        <h3>Full-Stack Web Development</h3>
+        <p>End-to-end development using Python (Django), JavaScript (React), HTML, CSS, and Bootstrap to create responsive and scalable web applications.</p>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="service-card">
+        <i class="fas fa-database"></i>
+        <h3>Database Design & Management</h3>
+        <p>Designing and managing databases with MySQL and SQLite, ensuring efficient data handling for your applications.</p>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="service-card">
+        <i class="fas fa-cogs"></i>
+        <h3>Custom Web Application Development</h3>
+        <p>Building tailored solutions like inventory systems, e-commerce platforms, and event management tools using Django.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="projects" id="projects">
+  <h2>My Projects</h2>
+  <p>Listed below are some of the most representative projects I've done.They range from <strong>basic web design</strong> sites to <strong>Management Systems Applications</strong></p>
+  <div class="project-carousel">
+    <div class="project-grid">
+      <!-- Project 1 -->
+      <div class="project-card">
+        <img src="assets/img/proj1.png" alt="RBAC">
+        <div class="project-content">
+          <h3>RBAC</h3>
+          <p>Role-Based Access Control system in Django.</p>
+          <ul class="project-tech">
+            <li><strong>Frontend:</strong> HTML, CSS, JS, Bootstrap</li>
+            <li><strong>Backend:</strong> Django</li>
+            <li><strong>Database:</strong> MySQL</li>
+          </ul>
+          <div class="project-links">
+            <a href="#"><i class="fa-brands fa-github"></i> Code</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <img src="assets/img/proj2.png" alt="Inventory">
+        <div class="project-content">
+          <h3>Django Product Inventory</h3>
+          <p>Web-based product management system.</p>
+          <ul class="project-tech">
+            <li><strong>Frontend:</strong> HTML, CSS, JS, Bootstrap</li>
+            <li><strong>Backend:</strong> Django</li>
+            <li><strong>Database:</strong> SQLite</li>
+          </ul>
+          <div class="project-links">
+            <a href="#"><i class="fa-brands fa-github"></i> Code</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card">
+        <img src="assets/img/proj3.png" alt="E-Market">
+        <div class="project-content">
+          <h3>E-Market</h3>
+          <p>Django-based e-commerce project.</p>
+          <ul class="project-tech">
+            <li><strong>Frontend:</strong> HTML, CSS, JS, Bootstrap</li>
+            <li><strong>Backend:</strong> Django</li>
+            <li><strong>Database:</strong> MySQL</li>
+          </ul>
+          <div class="project-links">
+            <a href="#"><i class="fa-brands fa-github"></i> Code</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="project-card">
+        <img src="assets/img/proj4.png" alt="Event Management">
+        <div class="project-content">
+          <h3>Event Management</h3>
+          <p>Django app to manage events, bookings, and attendees.</p>
+          <ul class="project-tech">
+            <li><strong>Frontend:</strong> HTML, CSS, JS, Bootstrap</li>
+            <li><strong>Backend:</strong> Django</li>
+            <li><strong>Database:</strong> MySQL</li>
+          </ul>
+          <div class="project-links">
+            <a href="#"><i class="fa-brands fa-github"></i> Code</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="project-card">
+        <img src="assets/img/proj5.png" alt="Cafe Management">
+        <div class="project-content">
+          <h3>Cafe Management</h3>
+          <p>Django app to manage café operations, orders, and finances.</p>
+          <ul class="project-tech">
+            <li><strong>Frontend:</strong> HTML, CSS, JS, Bootstrap</li>
+            <li><strong>Backend:</strong> Django</li>
+            <li><strong>Database:</strong> MySQL</li>
+          </ul>
+          <div class="project-links">
+            <a href="#"><i class="fa-brands fa-github"></i> Code</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Carousel Indicators -->
+  <div class="carousel-indicators">
+    <span class="dot active"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+</section>
+
+
+
+<!-- ================= CONTACT SECTION ================= -->
+<section id="contact" class="contact">
+  <div class="contact-wrapper">
+    <h2>Get in Touch</h2>
+    <p class="contact-subtitle">Let’s collaborate or just say hello 👋</p>
+
+    <div class="contact-container">
+      <!-- Contact Form -->
+      <form class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+
+      <!-- Contact Info / Social Links -->
+      <div class="contact-info">
+        <p><i class="fa-solid fa-envelope"></i> sreeragkb7@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i> +91 8714152524</p>
+        <div class="contact-socials">
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#"><i class="fa-brands fa-github"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Footer / Social Links -->
+  <footer class="footer">
+    <p class="footer-text">© 2025 Sreerag</p>
+  </footer>
+
 </body>
 </html>
